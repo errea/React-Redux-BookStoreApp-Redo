@@ -1,34 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBookAction } from '../../redux/books/books';
+import { deleteBookAction } from '../../redux/books/books';
 
-function BookDetail({ id, book_title, book_category }) {
+function BookDetail({ id, bookTitle, bookCategory }) {
   const dispatch = useDispatch();
 
-  const handleRemove = (id) => {
-    dispatch(removeBookAction(id));
+  const handleRemoveBook = (id) => {
+    dispatch(deleteBookAction(id));
   };
 
   return (
     <div className="bookInfo">
       <p className="bookCategory">
-        {category}
+        {bookCategory}
       </p>
       <h2 className="bookTitle">
-        {title}
+        {bookTitle}
       </h2>
       <button type="button" className="btn commentBtn">Comments</button>
-      <button type="button" className="btn removeBtn" onClick={() => handleRemove(id)}>Remove</button>
+      <button type="button" className="btn removeBtn" onClick={() => handleRemoveBook(id)}>Remove</button>
       <button type="button" className="btn editBtn">Edit</button>
     </div>
   );
 }
 
-BookInfo.propTypes = {
+BookDetail.propTypes = {
   id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  bookTitle: PropTypes.string.isRequired,
+  bookCategory: PropTypes.string.isRequired,
 };
 
-export default BookInfo;
+export default BookDetail;
