@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/tiAsGoKPKpyQDWrmfNKR/books';
+const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/tiAsGoKPKpyQDWrmfNKR/books';
 
 const fetchBooks = async () => {
-  const response = await axios.get(url);
+  const response = await axios.get(apiUrl);
   const { data } = response;
   const books = [];
   Object.entries(data).forEach((book) => {
@@ -19,13 +19,13 @@ const fetchBooks = async () => {
 };
 
 const createNewBook = async (newBook) => {
-  const response = await axios.post(url, newBook);
+  const response = await axios.post(apiUrl, newBook);
   return response.data;
 };
 
 const removeBook = async (id) => {
-  const deleteBookURL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/tiAsGoKPKpyQDWrmfNKR/books/${id}`;
-  const response = await axios.delete(deleteBookURL);
+  const removeBookURL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/tiAsGoKPKpyQDWrmfNKR/books/${id}`;
+  const response = await axios.delete(removeBookURL);
   return response.data;
 };
 
