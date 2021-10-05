@@ -31,7 +31,11 @@ const InsertBook = () => {
           <option selected disabled value=""> Choose a Category </option>
           <option value="Fiction">Fiction</option>
           <option value="Action">Action</option>
-          <option value="Terror">Terror</option>
+          <option value="Terror">Horror</option>
+          <option value="Terror">Sci-fi</option>
+          <option value="Terror">Romance</option>
+          <option value="Terror">Thriller</option>
+          <option value="Terror">Non-fiction</option>
         </select>
         <button type="submit" className="formButton">Add book</button>
       </form>
