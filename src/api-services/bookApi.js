@@ -9,8 +9,8 @@ const fetchBooks = async () => {
   Object.entries(data).forEach((book) => {
     books.push(
       {
-        book_title: book[1][0].book_title,
-        book_category: book[1][0].book_category,
+        title: book[1][0].title,
+        category: book[1][0].category,
         item_id: `${book[0]}`,
       },
     );

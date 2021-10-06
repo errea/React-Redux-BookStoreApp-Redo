@@ -4,9 +4,9 @@ import BookDetail from './BookDetails';
 import BookProgressMeter from './BookProgressMeter';
 import BookChapterInfo from './BookChapterInfo';
 
-const Book = ({ id, bookTitle, bookCategory }) => (
+const Book = ({ id, title, category }) => (
   <li id={id} className="bookContainer">
-    <BookDetail id={id} title={bookTitle} category={bookCategory} />
+    <BookDetail id={id} title={title} category={category} />
     <div className="chapterInfoContainer">
       <BookProgressMeter />
       <BookChapterInfo />
@@ -16,8 +16,8 @@ const Book = ({ id, bookTitle, bookCategory }) => (
 
 Book.propTypes = {
   id: PropTypes.string.isRequired,
-  bookTitle: PropTypes.string.isRequired,
-  bookCategory: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default Book;
