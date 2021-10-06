@@ -4,8 +4,8 @@ import { insertBookAction } from '../../redux/books/books';
 
 const InsertBook = () => {
   const dispatch = useDispatch();
-  const [bookTitle, setBookTitle] = useState('');
-  const [bookCategory, setBookCategory] = useState('');
+  const [title, setBookTitle] = useState('');
+  const [category, setBookCategory] = useState('');
 
   const handleBookTitle = (e) => {
     setBookTitle(e.target.value);
@@ -17,7 +17,7 @@ const InsertBook = () => {
 
   const handleSubmitBook = (e) => {
     e.preventDefault();
-    dispatch(insertBookAction(bookTitle, bookCategory));
+    dispatch(insertBookAction(title, category));
     setBookTitle('');
     setBookCategory('');
   };
@@ -26,8 +26,8 @@ const InsertBook = () => {
     <div className="formContainer">
       <form onSubmit={handleSubmitBook}>
         <h1 className="formTitle">Add New Book</h1>
-        <input type="text" className="formInput" name="title" placeholder="Book title" value={bookTitle} onChange={handleBookTitle} required />
-        <select name="category" className="formSelect" palceholder="Choose a category" value={bookCategory} onChange={handleBookCategory} required>
+        <input type="text" className="formInput" name="title" placeholder="Book title" value={title} onChange={handleBookTitle} required />
+        <select name="category" className="formSelect" palceholder="Choose a category" value={category} onChange={handleBookCategory} required>
           <option selected disabled value=""> Choose a Category </option>
           <option value="Fiction">Fiction</option>
           <option value="Action">Action</option>
