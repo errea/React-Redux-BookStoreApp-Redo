@@ -53,6 +53,8 @@ You will need to build a website with two subpages: "Books" and "Categories." Ho
   
 
 ![screenshot](./src/img/screen-shot.png)
+
+## [LIVE PREVIEW](https://bookstore-redux-app.netlify.app/)
 ## Getting Started <a name = "gs"></a>
 > To get a local copy up and running follow these simple example steps.
 
