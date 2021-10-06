@@ -13,9 +13,9 @@ The Bookstore is a website similar to the "Awesome Books" website built in the p
 
 <div align="center">
 
-[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/errea/React-Redux-BookStore-App)
-[![Github Issues](https://img.shields.io/badge/Github%20-Issues-red)](https://github.com/errea/React-Redux-BookStore-App/issues)
-[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/React-Redux-BookStore-App/pull/1)
+[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/errea/React-Redux-BookStoreApp-Redo)
+[![Github Issues](https://img.shields.io/badge/Github%20-Issues-red)](https://github.com/errea/React-Redux-BookStoreApp-Redo/issues)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/React-Redux-BookStoreApp-Redo/pull/5)
 
 </div>
 
@@ -52,7 +52,7 @@ You will need to build a website with two subpages: "Books" and "Categories." Ho
 
   
 
-![screenshot](./src/img/screen-shot1.png)
+![screenshot](./src/img/screen-shot.png)
 ## Getting Started <a name = "gs"></a>
 > To get a local copy up and running follow these simple example steps.
 
@@ -64,7 +64,7 @@ $ cd <folder>
 ```
 
 ~~~bash
-$ git clone https://github.com/errea/React-Redux-BookStore-App.git
+$ git clone https://github.com/errea/React-Redux-BookStoreApp-Redo.git
 $ cd React-Redux-BookStore-App
 ~~~
 
@@ -117,7 +117,7 @@ Run `yarn start`  opens on `http://localhost:8080/` in your browser.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/errea/React-Redux-BookStore-App/issues)
+Feel free to check the [issues page](https://github.com/errea/React-Redux-BookStoreApp-Redo/issues)
 ## 👍 Show your support
 
 - Microverse: [@microverse](https://www.microverse.org/)
