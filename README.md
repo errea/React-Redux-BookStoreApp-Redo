@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Book-Store - React-Redux Project
 
-## Available Scripts
+> The "Bookstore" is a website similar to the "Awesome Books" website built in the previous module, this application would allow users to:
 
-In the project directory, you can run:
+* Display a list of books.
+* Add a book.
+* Remove a selected book.
+  
+The Bookstore is a website similar to the "Awesome Books" website built in the previous module. You will create an MVP version of it that allows you to: [Find project specifications here](https://github.com/microverseinc/curriculum-react-redux/blob/main/bookstore/sneak_peek.md)
+      
 
-### `yarn start`
+<div align="center">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/errea/React-Redux-BookStoreApp-Redo)
+[![Github Issues](https://img.shields.io/badge/Github%20-Issues-red)](https://github.com/errea/React-Redux-BookStoreApp-Redo/issues)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/React-Redux-BookStoreApp-Redo/pull/6)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+</div>
 
-### `yarn test`
+## 📝 Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#gs">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>
+</p>
 
-### `yarn build`
+># [Description]
+>By building this application, I will learn how to use React and Redux.
+How to build the Bookstore website
+You will need to build a website with two subpages: "Books" and "Categories." However, you will only need to implement the "Books" part (see the image below). The "Categories" page will stay empty in this MVP.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Built with<a name = "with"></a>
 
-### `yarn eject`
+- JavaScript
+- React/Redux
+- Hooks
+- React Routes
+- React-dom
+- NPM
+- Functional based Components with React Hooks 
+- Virtual DOM
+- [Webpack config](hhttps://webpack.js.org/guides/getting-started/)
+- ES6 Modules 
+- [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md)
+- Use [React Router](https://reactrouter.com/).
+- Use styles in a React app. [CSS modules](https://github.com/css-modules/css-modules).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![screenshot](./src/img/screen-shot.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## [LIVE PREVIEW](https://bookstore-redux-app.netlify.app/)
+## Getting Started <a name = "gs"></a>
+> To get a local copy up and running follow these simple example steps.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<details>
+  <summary>Get instructions</summary>
 
-## Learn More
+```
+$ cd <folder>
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+~~~bash
+$ git clone https://github.com/errea/React-Redux-BookStoreApp-Redo.git
+$ cd React-Redux-BookStore-App
+~~~
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run `yarn Install` to install the node modules and webpacker.
 
-### Code Splitting
+Run `yarn build` to build the bundler.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Run `yarn start`  opens on `http://localhost:8080/` in your browser.
 
-### Analyzing the Bundle Size
+## Set up
+* Open your terminal and locate the folder you want to clone the repository and follow the steps above to install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+</details>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    Book-Store-Redux Project
+    └── node_modules
+    └── .github\workflows
+        └── linters.yml
+    /src
+    |---/components
+    |---/redux
+        |--- /books
+                | books.js
+        |--- /categories
+                | categories.js
+        | cofigureStore.js
+    | index.js
+    └── .eslintrc.json
+    └── .gitignore
+    └── .hintrc
+    └──.stylelintrc.json
+    └── MIT.md
+    └── package-lock.json
+    └── package.json
+    └──README.md
 
-### Deployment
+## ✒️  Authors <a name = "author"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👤 **Eri**
 
-### `yarn build` fails to minify
+- Github: [@errea](https://github.com/errea)
+- Twitter: [@Erreakay](https://github.com/errea)
+- Linkedin: [Eri Okereafor](https://www.linkedin.com/in/eri-ngozi-okereafor/)
+  
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/errea/React-Redux-BookStoreApp-Redo/issues)
+## 👍 Show your support
+
+- Microverse: [@microverse](https://www.microverse.org/)
+
+## Acknowledgments
+
+- Microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
