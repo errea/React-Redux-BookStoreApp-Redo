@@ -15,7 +15,7 @@ The Bookstore is a website similar to the "Awesome Books" website built in the p
 
 [![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/errea/React-Redux-BookStoreApp-Redo)
 [![Github Issues](https://img.shields.io/badge/Github%20-Issues-red)](https://github.com/errea/React-Redux-BookStoreApp-Redo/issues)
-[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/React-Redux-BookStoreApp-Redo/pull/5)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/React-Redux-BookStoreApp-Redo/pull/6)
 
 </div>
 
