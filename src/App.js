@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import BookNavBar from './components/book-navbar';
+import InsertBook from './components/books/InsertBook';
+import BookList from './components/books/BookList';
+import BookCategories from './components/books-categories';
 import './App.css';
+import './assets/styles/book-navbar.css';
+import './assets/styles/book.css';
+import './assets/styles/progress-meter.css';
+import './assets/styles/form.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <BookNavBar />
+      <Switch>
+        <Route path="/categories">
+          <BookCategories />
+        </Route>
+        <Route path="/">
+          <BookList />
+          <InsertBook />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

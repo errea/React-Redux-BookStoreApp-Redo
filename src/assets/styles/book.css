@@ -1,0 +1,139 @@
+.bookList {
+  margin: 100px auto 50px auto;
+  width: 86.5%;
+  padding: 0;
+}
+
+.bookContainer {
+  justify-content: space-between;
+  box-sizing: border-box;
+  border: solid 1px var(--border);
+  background-color: #fff;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+}
+
+.bookCategory {
+  font-size: 0.9rem;
+  font-family: 'm-bold', Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--pale-gray);
+  margin: 0 0 5px 0;
+}
+
+.bookTitle {
+  font-size: 1.375rem;
+  font-family: 'robotoSlab', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: var(--black-two);
+  margin: 0 0 20px 0;
+}
+
+.btn {
+  font-family: 'robotoSlab', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  border: none;
+  color: var(--btn);
+  text-transform: capitalize;
+  background-color: #fff;
+  padding: 5px 15px 5px 15px;
+  border-right: solid 2px var(--border);
+  cursor: pointer;
+}
+
+.commentBtn {
+  padding-left: 0;
+}
+
+.editBtn {
+  border-right: none;
+}
+
+.circleContainer {
+  margin-right: 100px;
+}
+
+.bookContainer,
+.circleContainer,
+.chapterInfoContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.percentageInfo {
+  margin-left: 15px;
+}
+
+.percentage {
+  color: var(--black-two);
+  font-family: 'm-normal', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+
+.status {
+  color: var(--pale-gray);
+  font-family: 'm-normal', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.currentChapterContainer {
+  padding-left: 100px;
+  border-left: solid 2px var(--border);
+}
+
+.currentChapterTitle {
+  font-family: 'robotoSlab', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  color: var(--pale-gray);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.currentChapterLesson {
+  font-family: 'robotoSlab', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  color: var(--black-two);
+  text-transform: capitalize;
+  margin: 7px 0 25px 0;
+}
+
+.progressBtn {
+  font-family: 'm-light', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: var(--azure);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.bookContainer:hover {
+  border-color: var(--azure);
+}
+
+@media (max-width: 1024px) {
+  .bookContainer {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .circleContainer,
+  .currentChapterContainer {
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    width: 100%;
+    border: none;
+    text-align: center;
+    padding: 0;
+  }
+}
